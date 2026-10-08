@@ -76,7 +76,7 @@ pub fn lp_args(job: &Job, file: &str) -> Vec<String> {
 /// interface language (`AppleLanguages`) unless `SOFTWARE` is set, in which case it uses `LANG`.
 pub fn lpstat_command() -> std::process::Command {
     let mut c = std::process::Command::new("lpstat");
-    c.args(["-p", "-d"]).env("LC_ALL", "C").env("LANG", "C").env("SOFTWARE", "PrintCraft");
+    c.args(["-p", "-d"]).env("LC_ALL", "C").env("LANG", "C").env("SOFTWARE", "PdfCraft");
     c
 }
 
